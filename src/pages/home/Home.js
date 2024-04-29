@@ -3,6 +3,7 @@ import './Home.css'
 
 import React from 'react'
 import useFetch from '../../hooks/useFetch'
+import Recipe from '../../components/RecipeList'
 
 export default function Home() {
 
@@ -12,9 +13,7 @@ export default function Home() {
     <div className='home'>
       {error && <p className='error'>{error}</p>}
       {isPending && <p className='loading' >Caricamento... </p>}
-      {data && data.map(recipe => (
-        <h2 key={recipe.id}>{recipe.title}</h2>
-      ))}
+      {data && <Recipe recipes={data}/>}
     </div>
   )
 }
