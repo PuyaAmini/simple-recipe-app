@@ -1,0 +1,31 @@
+.navbar {
+       background:#491b86;
+       padding: 20px;      
+       color: aliceblue;
+}
+.navbar nav{
+       display: flex;
+       align-items: center;
+       max-width: 1200px;
+       margin: 0 auto;
+}
+.navbar a.brand{
+       margin-right: auto;
+       color: aliceblue;
+       text-decoration: none;
+}
+.navbar a.brand:hover{
+       color: #f7c0ee;
+}
+.navbar a:last-child{
+       color: aliceblue;
+       text-decoration: none;
+       margin-left: 40px;
+       padding: 8px;
+       border: 1px solid aliceblue;
+       border-radius: 4px;
+}
+.navbar a:last-child:hover{
+       background: aliceblue ;
+       color: #333;
+}
