@@ -7,6 +7,7 @@ export default function useFetch(url, method = "GET") {
 
   // New state for request options
   const [options, setOptions] = useState(null);
+  
   const postData = (postData) => {
     setOptions({
       // Set the HTTP method to POST
@@ -62,7 +63,7 @@ export default function useFetch(url, method = "GET") {
 
     // Fetch data using POST method with specified options
     if (method === "POST" && options) {
-      fetchData(options);
+      fetchData(options); //const postData
     }
   }, [fetchData, method, options]);
 

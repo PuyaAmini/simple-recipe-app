@@ -2,7 +2,8 @@
 import "./Create.css";
 
 import useFetch from "../../hooks/useFetch";
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function Create() {
   const [title, setTitle] = useState("");
@@ -11,14 +12,14 @@ export default function Create() {
 
   const [newIngredient, setNewIngredient] = useState("");
   const [ingredients, setIngredients] = useState([]);
-  
+
   // useRef hook to keep a reference to the ingredient input element
   const ingredientInput = useRef(null);
 
   // Destructure the postData function from the useFetch hook
   const { postData, data, error } = useFetch(
     "http://localhost:3000/recipes",
-    "POST" // The HTTP method used for the request
+    "POST" // fetch option : The HTTP method used for the request
   );
 
   const handleSubmit = (e) => {
@@ -42,6 +43,15 @@ export default function Create() {
     setNewIngredient("");
     ingredientInput.current.focus();
   };
+
+  // redirection user when we get data response
+  const navigate = useNavigate();
+  useEffect(() => {
+    if (data) {
+      //from useFetch : const json = await res.json(); setData(json);
+      navigate("/");
+    }
+  }, [data]);
 
   return (
     <div className="create">
