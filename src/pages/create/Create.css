@@ -28,3 +28,13 @@
 .create button:hover {
   background-color: #bd35fc;
 }
+.ingredients {
+  display: flex;
+  align-items: center;
+}
+.ingredients button {
+  margin: 0 0 0 10px;
+}
+.ingredients button:hover {
+  background-color: cornflowerblue;
+}
