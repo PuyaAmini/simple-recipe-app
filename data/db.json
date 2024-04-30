@@ -1,115 +1,301 @@
 {
-       "recipes": [
-         {
-           "id": "1",
-           "title": "Veggie Stew",
-           "ingredients": [
-             "1 Carrot",
-             "1 Leek",
-             "200g Tofu",
-             "300ml Veg stock"
-           ],
-           "method": "1. Pre-heat the oven to 200C/3C/gas 5. Place the carrot, leek and tofu in a large bowl. Add the stock and mix well. 2. Add the rest of the ingredients and mix well. 3. Place the mixture in a large bowl and cover with a lid. 4. Place the lid on the oven and cook for 40 minutes. 5. Serve with a slaw of your choice",
-           "cookingTime": "45 minutes"
-         },
-         {
-           "id": "2",
-           "title": "Veggie Pizza",
-           "ingredients": [
-             "1 Base",
-             "Tomata pasata",
-             "1 Green pepper",
-             "100g Mushrooms"
-           ],
-           "method": "1. Pre-heat the oven to 200C/3C/gas 5. Add the pasata, green pepper and mushrooms to the base. Place the lid on the oven and cook for 30 minutes. 5. Serve with a slaw of your choice",
-           "cookingTime": "35 minutes"
-         },
-         {
-           "id": "3",
-           "title": "Greek Salad",
-           "ingredients": [
-             "1 Onion",
-             "1 Block of Feta",
-             "Olives",
-             "Tomatoes",
-             "Olive Oil"
-           ],
-           "method": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse minima ex rem quis similique eum ratione quaerat, voluptas molestias ut repudiandae delectus voluptates. Eius esse at tenetur ab accusamus excepturi?",
-           "cookingTime": "35 minutes"
-         },
-         {
-          "id": "4",
-          "title": "Bean Soup",
-          "ingredients": [
-            "1 cup Red Beans",
-            "1 Onion",
-            "2 cloves Garlic",
-            "300ml Water"
-          ],
-          "method": "1. Soak the beans overnight. 2. Saute the onion and garlic in a pot. 3. Add the beans and water to the pot. 4. Simmer for 2 hours. 5. Serve hot with bread.",
-          "cookingTime": "2 hours 15 minutes"
-        },
-        {
-          "id": "5",
-          "title": "Pasta Salad",
-          "ingredients": [
-            "200g Pasta",
-            "1 Tomato",
-            "50g Feta Cheese",
-            "Handful of Basil"
-          ],
-          "method": "1. Cook the pasta according to package instructions. 2. Chop the tomato and feta. 3. Mix all ingredients together. 4. Serve chilled.",
-          "cookingTime": "30 minutes"
-        },
-        {
-          "id": "6",
-          "title": "Veggie Stir Fry",
-          "ingredients": [
-            "1 Bell Pepper",
-            "1 Zucchini",
-            "100g Mushrooms",
-            "2 tbsp Soy Sauce"
-          ],
-          "method": "1. Chop all the vegetables. 2. Heat oil in a pan. 3. Add the vegetables and stir fry for 5 minutes. 4. Add soy sauce and cook for another 2 minutes. 5. Serve with rice.",
-          "cookingTime": "15 minutes"
-        },
-        {
-          "id": "7",
-          "title": "Fruit Smoothie",
-          "ingredients": [
-            "1 Banana",
-            "1 cup Strawberries",
-            "1/2 cup Yogurt",
-            "1 cup Ice"
-          ],
-          "method": "1. Place all ingredients in a blender. 2. Blend until smooth. 3. Serve immediately.",
-          "cookingTime": "5 minutes"
-        },
-        {
-          "id": "8",
-          "title": "Cheese Omelette",
-          "ingredients": [
-            "2 Eggs",
-            "50g Cheddar Cheese",
-            "1 tbsp Butter",
-            "Salt and Pepper to taste"
-          ],
-          "method": "1. Beat the eggs in a bowl. 2. Melt the butter in a pan. 3. Pour the eggs into the pan. 4. Sprinkle cheese on top. 5. Fold the omelette in half. 6. Serve hot.",
-          "cookingTime": "10 minutes"
-        },
-        {
-          "id": "9",
-          "title": "Chocolate Cake",
-          "ingredients": [
-            "200g Flour",
-            "200g Sugar",
-            "100g Cocoa Powder",
-            "3 Eggs",
-            "1 tsp Baking Powder"
-          ],
-          "method": "1. Preheat the oven to 180C. 2. Mix all ingredients in a bowl. 3. Pour the batter into a cake tin. 4. Bake for 30 minutes. 5. Let it cool before serving.",
-          "cookingTime": "45 minutes"
-        }
-        
-       ]
-     }
+  "recipes": [
+    {
+      "id": "1",
+      "title": "Veggie Stew",
+      "ingredients": [
+        "1 Carrot",
+        "1 Leek",
+        "200g Tofu",
+        "300ml Veg stock"
+      ],
+      "method": "1. Pre-heat the oven to 200C/3C/gas 5. Place the carrot, leek and tofu in a large bowl. Add the stock and mix well. 2. Add the rest of the ingredients and mix well. 3. Place the mixture in a large bowl and cover with a lid. 4. Place the lid on the oven and cook for 40 minutes. 5. Serve with a slaw of your choice",
+      "cookingTime": "45 minutes"
+    },
+    {
+      "id": "2",
+      "title": "Veggie Pizza",
+      "ingredients": [
+        "1 Base",
+        "Tomata pasata",
+        "1 Green pepper",
+        "100g Mushrooms"
+      ],
+      "method": "1. Pre-heat the oven to 200C/3C/gas 5. Add the pasata, green pepper and mushrooms to the base. Place the lid on the oven and cook for 30 minutes. 5. Serve with a slaw of your choice",
+      "cookingTime": "35 minutes"
+    },
+    {
+      "id": "3",
+      "title": "Greek Salad",
+      "ingredients": [
+        "1 Onion",
+        "1 Block of Feta",
+        "Olives",
+        "Tomatoes",
+        "Olive Oil"
+      ],
+      "method": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse minima ex rem quis similique eum ratione quaerat, voluptas molestias ut repudiandae delectus voluptates. Eius esse at tenetur ab accusamus excepturi?",
+      "cookingTime": "35 minutes"
+    },
+    {
+      "id": "4",
+      "title": "Bean Soup",
+      "ingredients": [
+        "1 cup Red Beans",
+        "1 Onion",
+        "2 cloves Garlic",
+        "300ml Water"
+      ],
+      "method": "1. Soak the beans overnight. 2. Saute the onion and garlic in a pot. 3. Add the beans and water to the pot. 4. Simmer for 2 hours. 5. Serve hot with bread.",
+      "cookingTime": "2 hours 15 minutes"
+    },
+    {
+      "id": "5",
+      "title": "Pasta Salad",
+      "ingredients": [
+        "200g Pasta",
+        "1 Tomato",
+        "50g Feta Cheese",
+        "Handful of Basil"
+      ],
+      "method": "1. Cook the pasta according to package instructions. 2. Chop the tomato and feta. 3. Mix all ingredients together. 4. Serve chilled.",
+      "cookingTime": "30 minutes"
+    },
+    {
+      "id": "6",
+      "title": "Veggie Stir Fry",
+      "ingredients": [
+        "1 Bell Pepper",
+        "1 Zucchini",
+        "100g Mushrooms",
+        "2 tbsp Soy Sauce"
+      ],
+      "method": "1. Chop all the vegetables. 2. Heat oil in a pan. 3. Add the vegetables and stir fry for 5 minutes. 4. Add soy sauce and cook for another 2 minutes. 5. Serve with rice.",
+      "cookingTime": "15 minutes"
+    },
+    {
+      "id": "7",
+      "title": "Fruit Smoothie",
+      "ingredients": [
+        "1 Banana",
+        "1 cup Strawberries",
+        "1/2 cup Yogurt",
+        "1 cup Ice"
+      ],
+      "method": "1. Place all ingredients in a blender. 2. Blend until smooth. 3. Serve immediately.",
+      "cookingTime": "5 minutes"
+    },
+    {
+      "id": "8",
+      "title": "Cheese Omelette",
+      "ingredients": [
+        "2 Eggs",
+        "50g Cheddar Cheese",
+        "1 tbsp Butter",
+        "Salt and Pepper to taste"
+      ],
+      "method": "1. Beat the eggs in a bowl. 2. Melt the butter in a pan. 3. Pour the eggs into the pan. 4. Sprinkle cheese on top. 5. Fold the omelette in half. 6. Serve hot.",
+      "cookingTime": "10 minutes"
+    },
+    {
+      "id": "9",
+      "title": "Chocolate Cake",
+      "ingredients": [
+        "200g Flour",
+        "200g Sugar",
+        "100g Cocoa Powder",
+        "3 Eggs",
+        "1 tsp Baking Powder"
+      ],
+      "method": "1. Preheat the oven to 180C. 2. Mix all ingredients in a bowl. 3. Pour the batter into a cake tin. 4. Bake for 30 minutes. 5. Let it cool before serving.",
+      "cookingTime": "45 minutes"
+    },
+    {
+      "id": "09e7",
+      "title": "Chicken soup",
+      "ingredients": [
+        "carrot",
+        "Chicken Breast",
+        "parsnips",
+        "leek",
+        "celery",
+        "onion",
+        "garlic",
+        "Fresh Herbs",
+        "Chicken Broth"
+      ],
+      "method": "Saute the veggies, Poach the chicken. Shred the chicken.Garnish and serve.",
+      "cookingTime": "120 minutes"
+    },
+    {
+      "id": "8de0",
+      "title": "Chicken soup",
+      "ingredients": [
+        "carrot",
+        "Chicken Breast",
+        "parsnips",
+        "leek",
+        "celery",
+        "onion",
+        "garlic",
+        "Fresh Herbs",
+        "Chicken Broth"
+      ],
+      "method": "Saute the veggies, Poach the chicken. Shred the chicken.Garnish and serve.",
+      "cookingTime": "120 minutes"
+    },
+    {
+      "id": "78dd",
+      "title": "Chicken soup",
+      "ingredients": [
+        "carrot",
+        "Chicken Breast",
+        "parsnips",
+        "leek",
+        "celery",
+        "onion",
+        "garlic",
+        "Fresh Herbs",
+        "Chicken Broth"
+      ],
+      "method": "Saute the veggies, Poach the chicken. Shred the chicken.Garnish and serve.",
+      "cookingTime": "120 minutes"
+    },
+    {
+      "id": "ae66",
+      "title": "Chicken soup",
+      "ingredients": [
+        "carrot",
+        "Chicken Breast",
+        "parsnips",
+        "leek",
+        "celery",
+        "onion",
+        "garlic",
+        "Fresh Herbs",
+        "Chicken Broth"
+      ],
+      "method": "Saute the veggies, Poach the chicken. Shred the chicken.Garnish and serve.",
+      "cookingTime": "120 minutes"
+    },
+    {
+      "id": "15a7",
+      "title": "Chicken soup",
+      "ingredients": [
+        "carrot",
+        "Chicken Breast",
+        "parsnips",
+        "leek",
+        "celery",
+        "onion",
+        "garlic",
+        "Fresh Herbs",
+        "Chicken Broth"
+      ],
+      "method": "Saute the veggies, Poach the chicken. Shred the chicken.Garnish and serve.",
+      "cookingTime": "120 minutes"
+    },
+    {
+      "id": "4e17",
+      "title": "Chicken soup",
+      "ingredients": [
+        "carrot",
+        "Chicken Breast",
+        "parsnips",
+        "leek",
+        "celery",
+        "onion",
+        "garlic",
+        "Fresh Herbs",
+        "Chicken Broth"
+      ],
+      "method": "Saute the veggies, Poach the chicken. Shred the chicken.Garnish and serve.",
+      "cookingTime": "120 minutes"
+    },
+    {
+      "id": "3128",
+      "title": "Chicken soup",
+      "ingredients": [
+        "carrot",
+        "Chicken Breast",
+        "parsnips",
+        "leek",
+        "celery",
+        "onion",
+        "garlic",
+        "Fresh Herbs",
+        "Chicken Broth"
+      ],
+      "method": "Saute the veggies, Poach the chicken. Shred the chicken.Garnish and serve.",
+      "cookingTime": "120 minutes"
+    },
+    {
+      "id": "236b",
+      "title": "Chicken soup",
+      "ingredients": [
+        "carrot",
+        "Chicken Breast",
+        "parsnips",
+        "leek",
+        "celery",
+        "onion",
+        "garlic",
+        "Fresh Herbs",
+        "Chicken Broth"
+      ],
+      "method": "Saute the veggies, Poach the chicken. Shred the chicken.Garnish and serve.",
+      "cookingTime": "120 minutes"
+    },
+    {
+      "id": "14d5",
+      "title": "Chicken soup",
+      "ingredients": [
+        "carrot",
+        "Chicken Breast",
+        "parsnips",
+        "leek",
+        "celery",
+        "onion",
+        "garlic",
+        "Fresh Herbs",
+        "Chicken Broth"
+      ],
+      "method": "Saute the veggies, Poach the chicken. Shred the chicken.Garnish and serve.",
+      "cookingTime": "120 minutes"
+    },
+    {
+      "id": "e309",
+      "title": "Chicken soup",
+      "ingredients": [
+        "carrot",
+        "Chicken Breast",
+        "parsnips",
+        "leek",
+        "celery",
+        "onion",
+        "garlic",
+        "Fresh Herbs",
+        "Chicken Broth"
+      ],
+      "method": "Saute the veggies, Poach the chicken. Shred the chicken.Garnish and serve.",
+      "cookingTime": "120 minutes"
+    },
+    {
+      "id": "b0ef",
+      "title": "Chicken soup",
+      "ingredients": [
+        "carrot",
+        "Chicken Breast",
+        "parsnips",
+        "leek",
+        "celery",
+        "onion",
+        "garlic",
+        "Fresh Herbs",
+        "Chicken Broth"
+      ],
+      "method": "Saute the veggies, Poach the chicken. Shred the chicken.Garnish and serve.",
+      "cookingTime": "120 minutes"
+    }
+  ]
+}
