@@ -1,0 +1,30 @@
+.create {
+  color: #555;
+  max-width: 480px;
+  margin: 60px auto;
+}
+.create label span {
+  display: block;
+  margin: 30px 0px 10px;
+}
+.create p {
+  margin-top: 10px;
+  font-size: 0.8em;
+}
+.create button {
+  display: block;
+  width: 100px;
+  margin: 20px auto;
+  font-size: 1em;
+  color: aliceblue;
+  padding: 8px 20px;
+  border: 0;
+  border-radius: 4px;
+  background-color: #491b86;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.9s ease;
+}
+.create button:hover {
+  background-color: #bd35fc;
+}
