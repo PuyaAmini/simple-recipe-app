@@ -11,18 +11,7 @@ import Navbar from './components/Navbar';
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
-      
-      <Navbar/>
 
-      <Routes>
-        <Route path='/' element={<Home/>}/>
-        <Route path='/create' element={<Create/>}/>
-        <Route path='/search' element={<Search/>}/>
-        <Route path='/recipes/:id' element={<Recipe/>}/>
-      </Routes>
-
-      </BrowserRouter>
     </div>
   );
 }
