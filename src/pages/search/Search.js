@@ -1,26 +1,33 @@
-import React, { useState, useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
-import { useFetch } from '../../hooks/useFetch';
-import RecipeList from '../../components/RecipeList';
+import React, { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
+import { useFetch } from "../../hooks/useFetch";
+import RecipeList from "../../components/RecipeList";
+import "./Search.css";
 
-import Fuse from 'fuse.js';
+function searchRecipes(recipes, query) {
+  // Convert the query and all relevant fields to lowercase
+  const lowercaseQuery = query.toLowerCase();
+  return recipes.filter((recipe) => {
+    const { title, ingredients, method } = recipe;
+    const lowercaseTitle = title.toLowerCase();
+    const lowercaseIngredients = ingredients.join(" ").toLowerCase();
+    const lowercaseMethod = method.toLowerCase();
 
-//style
-import './Search.css';
-function searchRecipes(recipes , query){
-  const fuse = new Fuse(recipes , {
-    keys:['title', 'ingredients', 'method'],
-    includeMatches:true,
-  })
-  return fuse.search(query).map(({item}) => item)
+    // Check if the lowercase query is present in any of the relevant fields
+    return (
+      lowercaseTitle.includes(`${lowercaseQuery}`) ||
+      lowercaseIngredients.includes(`${lowercaseQuery}`) ||
+      lowercaseMethod.includes(`${lowercaseQuery}`)
+    );
+  });
 }
 
 export default function Search() {
   const queryString = useLocation().search;
   const queryParams = new URLSearchParams(queryString);
-  const query = queryParams.get('q');
+  const query = queryParams.get("q");
 
-  const url = 'http://localhost:3000/recipes';
+  const url = "http://localhost:3000/recipes";
   const { error, isPending, data } = useFetch(url);
   const [searchResults, setSearchResults] = useState([]);
 
