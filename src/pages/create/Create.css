@@ -2,6 +2,9 @@
   color: #555;
   max-width: 480px;
   margin: 60px auto;
+  padding: 40px;
+  border: #8d8983 solid 2px;
+  border-radius: 4px;
 }
 .create label span {
   display: block;
@@ -37,4 +40,20 @@
 }
 .ingredients button:hover {
   background-color: cornflowerblue;
+}
+p.space{
+  padding: 40px;
+}
+/* dark mode */
+.create.dark{
+  color: #e0d5c8;
+  margin-bottom: 20px;
+  border: #6e6c69 solid 2px;
+  border-radius: 4px;
+}
+.create.dark button{
+  background-color: #36064d;
+}
+.create.dark button:hover{
+  background-color: #270f46;
 }

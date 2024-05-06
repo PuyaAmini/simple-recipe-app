@@ -3,7 +3,7 @@
   margin: 40px auto;
   text-align: center;
   padding: 40px;
-  background: #fff;
+  background: #d9d6d6;
   box-sizing: border-box;
 }
 .recipe ul {
@@ -26,4 +26,17 @@
 .method {
   text-align: left;
   line-height: 1.5em;
+}
+
+/* dark mode */
+.recipe.dark {
+  border-radius: 4px;
+  background: #252523;
+  color: #abac9b;
+}
+.recipe.dark h2 {
+  color:#d4b58d;
+}
+.recipe.dark li{
+  color: #d4b58d ;
 }
