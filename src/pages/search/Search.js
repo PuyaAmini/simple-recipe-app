@@ -2,22 +2,17 @@ import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { useFetch } from '../../hooks/useFetch';
 import RecipeList from '../../components/RecipeList';
+
+import Fuse from 'fuse.js';
+
+//style
 import './Search.css';
-
-function searchRecipes(recipes, query) {
-  const lowercaseQuery = query.toLowerCase();
-  return recipes.filter((recipe) => {
-    const { title, ingredients, method } = recipe;
-    const lowercaseTitle = title.toLowerCase();
-    const lowercaseIngredients = ingredients.join(' ').toLowerCase();
-    const lowercaseMethod = method.toLowerCase();
-
-    return (
-      lowercaseTitle.includes(lowercaseQuery) ||
-      lowercaseIngredients.includes(lowercaseQuery) ||
-      lowercaseMethod.includes(lowercaseQuery)
-    );
-  });
+function searchRecipes(recipes , query){
+  const fuse = new Fuse(recipes , {
+    keys:['title', 'ingredients', 'method'],
+    includeMatches:true,
+  })
+  return fuse.search(query).map(({item}) => item)
 }
 
 export default function Search() {
