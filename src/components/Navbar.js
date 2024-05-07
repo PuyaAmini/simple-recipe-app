@@ -6,15 +6,13 @@ import Searchbar from './Searchbar'
 
 // styles:
 import './Navbar.css'
-import { useTheme } from '../hooks/useTheme'
 
 
 export default function Navbar() {
 
-  const {color } = useTheme()
 
   return (
-    <div className='navbar' style={{background:color}}>
+    <div className='navbar' >
       <nav>
        <Link to={'/'} className='brand'><h1>Ninja Ricetta</h1></Link>
        <Searchbar/>

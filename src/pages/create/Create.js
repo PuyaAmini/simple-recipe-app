@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom";
 
 // styles
 import "./Create.css";
-import { useTheme } from "../../hooks/useTheme";
 //hooks and components
 import { useFetch } from "../../hooks/useFetch";
 
@@ -56,11 +55,11 @@ export default function Create() {
     //focus on input again
     ingredientsInput.current.focus();
   };
-  const { mode } = useTheme();
+
 
   return (
     <div>
-      <div className={`create ${mode}`}>
+      <div className={`create`}>
         <h2 className="page-title">Add a new Recipe</h2>
         <form onSubmit={handleSubmit}>
           {/* add title */}
