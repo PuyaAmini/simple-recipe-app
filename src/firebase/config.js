@@ -1,5 +1,5 @@
 import firebase from "firebase/compat/app"; //core
-import "firebase/firestore"; //import any other fetcher we want
+import "firebase/compat/firestore"; //import any other fetcher we want
 
 const firebaseConfig = {
   apiKey: "AIzaSyCH1z107ZXRdKq3OXTk2J6XnvcxqlEg2Q4",
