@@ -50,10 +50,14 @@ p.space{
   margin-bottom: 20px;
   border: #6e6c69 solid 2px;
   border-radius: 4px;
+  background:#25373a;
 }
 .create.dark button{
   background-color: #36064d;
 }
 .create.dark button:hover{
   background-color: #270f46;
+}
+.create.dark h2{
+  color: #d2b38d;
 }
