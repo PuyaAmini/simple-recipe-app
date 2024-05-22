@@ -4,8 +4,8 @@ import { useNavigate } from "react-router-dom";
 // styles
 import "./Create.css";
 //hooks and components
-import { useFetch } from "../../hooks/useFetch";
 import {useTheme} from '../../hooks/useTheme'
+import { projectFirestore } from "../../firebase/config";
 
 export default function Create() {
   const [title, setTitle] = useState("");
@@ -19,29 +19,25 @@ export default function Create() {
   //for focus again on input after enter new ingredients
   const ingredientsInput = useRef(null);
 
-  const { postData, data, error } = useFetch(
-    "http://localhost:3000/recipes",
-    "POST"
-  );
+  const navigate = useNavigate();
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    postData({
+    const doc ={
       title,
       ingredients,
       method,
       cookingTime: cookingTime + " minutes",
-    });
+    };
+    try{
+      await projectFirestore.collection('recipes').add(doc)
+      // navigate to home page
+      navigate("/")
+    } catch(err){
+      console.log(err)
+    }
   };
 
-  // navigate to home page
-  const navigate = useNavigate();
-  useEffect(() => {
-    if (data) {
-      //from useFetch : const json = await res.json(); setData(json);
-      navigate("/");
-    }
-  }, [data]);
 
   //add ingredient input func
   const handleAdd = (e) => {
