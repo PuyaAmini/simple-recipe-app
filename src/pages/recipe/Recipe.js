@@ -18,11 +18,10 @@ export default function Recipe() {
   useEffect(() => {
     setIsPending(true);
 
-    projectFirestore
+    const unSub =projectFirestore
       .collection("recipes")
       .doc(id)
-      .get()
-      .then((doc) => {
+      .onSnapshot((doc) => {
         if (doc.exists) {
           setIsPending(false);
           setRecipe(doc.data());
@@ -31,15 +30,21 @@ export default function Recipe() {
           setError("could not find recipe..");
         }
       });
-  }, [id]); 
+      //real time listening :O
+      return () => unSub()
+  }, [id]);
   //the "id" will not change but we have to add it for the sake of warnings
-
+  const handleClick = () => {
+    projectFirestore.collection("recipes").doc(id).update({
+      title: `edited title just for example`,
+    });
+  };
   return (
     <div className={`recipe ${mode}`}>
       {error && <p className="error">{error}</p>}
       {isPending && <p className="loading">Loading...</p>}
       {recipe && (
-        <React.Fragment>
+        <>
           <h2 className="page-title">{recipe.title}</h2>
           <p>Takes {recipe.cookingTime} to cook</p>
           <ul>
@@ -48,7 +53,8 @@ export default function Recipe() {
             ))}
           </ul>
           <p className="method">{recipe.method}</p>
-        </React.Fragment>
+          <button onClick={handleClick}>Update</button>
+        </>
       )}
     </div>
   );
