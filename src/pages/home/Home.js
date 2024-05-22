@@ -10,8 +10,7 @@ export default function Home() {
 
   useEffect(() => {
     setIsPending(true);
-    const unsubscribe = projectFirestore.collection('recipes').get()
-    .then(snapshot => {
+    const unsubscribe = projectFirestore.collection('recipes').onSnapshot(snapshot => {
       if(snapshot.empty){
         setError('no recipes to load')
         setIsPending(false)
@@ -23,12 +22,16 @@ export default function Home() {
         setData(results)
         setIsPending(false)
       }
-    }).catch(err => {
+    } , (err) =>{
       setError(err.message)
       setIsPending(false)
     })
-    
+    //we don't deal with errors(with Catch) when we have realtime listener we deal with them in different way
+    // this is how we have cleanUp func inside use effect (we return a func)
+    // cleanUp func fires if his component get unmount
+    return () => unsubscribe()
   }, []);
+
 
   return (
     <div className="home">
